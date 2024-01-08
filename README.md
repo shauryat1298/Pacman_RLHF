@@ -1,4 +1,4 @@
-# Pacman_RL_with_feedback
+# Pacman using Reinforcement Learning with Human Feedback
 Reinforcement learning (Q learning with function approximation) with human feedback implemented in Pacman environment
 
 ## About
