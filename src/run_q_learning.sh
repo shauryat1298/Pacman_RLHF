@@ -1,0 +1,1 @@
+python2 pacman.py -p ApproximateQAgent -a extractor=SimpleExtractorPellet -x 10 -n 11 -l mediumClassic

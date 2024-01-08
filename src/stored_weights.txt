@@ -1,0 +1,6 @@
+closest-food -0.367647064789
+scaredTime-ghostDist 45.875593041
+bias 12.5380622933
+#-of-scared-ghosts-1-step-away 28.9434985298
+#-of-non-scared-ghosts-1-step-away -20.0969486489
+eats-food 24.4061449414

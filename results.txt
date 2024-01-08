@@ -1,0 +1,164 @@
+(Queries:
+1: bias
+2: run into scared ghosts 1 step away
+3: run into non-scared ghosts 1 step away
+4: eat food
+5: distance to closest food
+6: hunt scared ghost
+
+(+ for increase and - for decrease)
+)
+
+Experiment: We ran the program 3 times first (with exploration on) and stored weights. The next 4 times, we loaded the same weights and ran with and without queries (with exploration off). The following are the scores:
+(Note: For each run, average is computed for the last three episodes only)
+
+(Command used: python2 pacman.py -p ApproximateQAgentFeedback -a extractor=SimpleExtractorPellet -x 0 -n 4 -l mediumClassic)
+
+------------
+Run 1:
+------------
+1. 377
+2. 115
+3. -329
+
+Without query:
+(First run: 225)
+4. 422
+5. 2114
+6. 1737
+
+Avg: 1424.3
+
+With query: 
+(First run: -335 (5 -))
+4. 2109 (6 +)
+5. 1688 (2 +)
+6. 2125
+
+Avg: 1974.0
+
+------------
+Run 2:
+------------
+1. -227
+2. 1553
+3. 1539
+
+Without query:
+(First run: 1522)
+4. 2115
+5. 2101
+6. 2102
+
+Avg: 2106.0
+
+With query: 
+(First run:  -387(2 +))
+4. 1748(6 +)
+5. 2129(6 +)
+6. 2125
+
+Avg: 2000.7
+
+------------
+Run 3:
+------------
+1. -385
+2. 1351
+3. 1548
+
+Wihout query:
+(First run: -394)
+4. 1750
+5. 1539
+6. 1353
+
+Avg: 1547.3
+
+With query:
+(First run: 1514(6 +))
+4. 1897 (2 +)
+5. 2125 (6 +)
+6. 2108
+
+Avg: 2043.3
+
+
+------------
+Run 4:
+------------
+1. 735
+2. 2129
+3. 1929
+
+Without query:
+(First run: 2072)
+4. -387
+5. 2128
+6. 2131
+
+Avg: 1290.66
+
+With query:
+(First run: 1717(6 +))
+4. 2095(5 -) 
+5. 2108(5 -)
+6. 1713
+
+Avg: 1973
+
+
+------------
+Run 5:
+------------
+1. 736
+2. 1676
+3. 1503
+
+Without query:
+(First run: 2055)
+4. 1728
+5. 2129
+6. 1918
+
+Avg: 1925
+
+With query:
+(First run: 1917(6 +))
+4. 2095(5 -) 
+5. 1905(6 +)
+6. 2092
+
+Avg: 2030.66
+
+
+------------
+Run 6:
+------------
+1. 425
+2. 2107
+3. 1902
+
+Without query:
+(First run: 1884)
+4. 1925
+5. 1890
+6. 1729
+
+Avg: 1848
+
+With query:
+(First run: 2040(3 -))
+4. 2117(2 +) 
+5. 2127(6 +)
+6. 2127
+
+Avg: 2123.66
+
+
+Final result:
+---------------
+
+Average without queries: 1690.2
+
+Average with queries: 2024.2
